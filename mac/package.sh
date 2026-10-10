@@ -31,7 +31,7 @@ mkdir -p "$STAGE/第三方授权"
 cp LICENSE.piano-upstream "$STAGE/第三方授权/钢琴 pock-piano-widget（MIT）.txt"
 
 cat > "$STAGE/使用说明.txt" <<EOF
-AIQuota $DATE（$COMMIT）
+AIQuota ${DATE}（${COMMIT}）
 在 Mac 菜单栏和触控栏上看 Claude / Codex 的 5 小时和每周额度、每个 AI 会话在干什么（等你、出错、做完），
 工作流路线图、做完叫我、Claude↔Codex 接力、tb 命令行灯，还有放松用的小猫、番茄钟、呼吸、歌词和钢琴。
 
