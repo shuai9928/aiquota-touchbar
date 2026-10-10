@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" role="img" aria-labelledby="title desc">
   <title id="title">Touch Bar 在 MacBook Pro 键盘上方的位置</title>
   <desc id="desc">键盘上方的长条触控屏是 Touch Bar，AIQuota 在这里显示额度、AI 状态和工作路线图。右侧独立按键为 Touch ID。</desc>
   <defs>

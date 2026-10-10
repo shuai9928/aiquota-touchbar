@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
   <title id="title">常用指令：点按复制，再粘贴到 AI 对话</title>
   <desc id="desc">三步操作示意：在触控栏选择跑测试，指令复制到剪贴板，用户按 Command V 粘贴到 AI 对话。应用不自动发送。</desc>
   <rect width="1000" height="250" rx="18" fill="#f7f9f6"/>
