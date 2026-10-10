@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
+  <title id="title">常用指令：点按复制，再粘贴到 AI 对话</title>
+  <desc id="desc">三步操作示意：在触控栏选择跑测试，指令复制到剪贴板，用户按 Command V 粘贴到 AI 对话。应用不自动发送。</desc>
+  <rect width="1000" height="250" rx="18" fill="#f7f9f6"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="30" y="37" font-size="18" fill="#536650">常用指令 · 操作示意</text>
+    <g font-size="18" fill="#23372d" font-weight="600">
+      <text x="30" y="78">1. 在触控栏点按</text><text x="362" y="78">2. 复制到剪贴板</text><text x="712" y="78">3. 你来粘贴</text>
+    </g>
+    <rect x="30" y="99" width="266" height="76" rx="13" fill="#151916"/>
+    <g font-size="17" fill="#d8dfd5" text-anchor="middle">
+      <text x="78" y="143">继续</text><text x="148" y="143">先讲方案</text>
+      <rect x="197" y="112" width="87" height="50" rx="9" fill="#294b3f" stroke="#93ae79" stroke-width="2"/>
+      <text x="240" y="143" fill="#edf5e7">跑测试</text>
+    </g>
+    <rect x="362" y="99" width="266" height="76" rx="13" fill="#fff" stroke="#d7dfd0"/>
+    <text x="385" y="143" font-size="20" fill="#23372d">请跑测试，并说明结果。</text>
+    <rect x="712" y="99" width="258" height="76" rx="13" fill="#fff" stroke="#d7dfd0"/>
+    <rect x="730" y="115" width="87" height="43" rx="7" fill="#edf2e7"/>
+    <text x="773" y="143" text-anchor="middle" font-size="22" font-weight="600" fill="#23372d">⌘ V</text>
+    <text x="834" y="143" font-size="17" fill="#536650">AI 对话输入框</text>
+    <g fill="none" stroke="#829478" stroke-width="2"><path d="M310 136h37m-9-7 9 7-9 7"/><path d="M650 136h43m-9-7 9 7-9 7"/></g>
+    <text x="30" y="217" font-size="17" fill="#68796c">只复制，不自动发送；粘贴与提交由你决定。</text>
+  </g>
+</svg>

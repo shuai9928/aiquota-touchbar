@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" role="img" aria-labelledby="title desc">
+  <title id="title">Touch Bar 在 MacBook Pro 键盘上方的位置</title>
+  <desc id="desc">键盘上方的长条触控屏是 Touch Bar，AIQuota 在这里显示额度、AI 状态和工作路线图。右侧独立按键为 Touch ID。</desc>
+  <defs>
+    <linearGradient id="case" x2="0" y2="1"><stop stop-color="#edf0f3"/><stop offset="1" stop-color="#d7dde3"/></linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="#52734f" stroke-width="1.4"/></marker>
+  </defs>
+  <rect width="1000" height="400" rx="20" fill="#f7f9f6"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="44" y="46" font-size="25" font-weight="700" fill="#20362c">Touch Bar：键盘上方的一条触控屏</text>
+    <text x="44" y="74" font-size="16" fill="#68796c">点按切换页面，左右滑动查看较长的内容。下面是位置示意。</text>
+    <rect x="43" y="116" width="742" height="262" rx="20" fill="url(#case)" stroke="#c2cbd2"/>
+    <rect x="72" y="139" width="48" height="29" rx="6" fill="#24282d"/>
+    <text x="96" y="158" font-size="13" text-anchor="middle" fill="#cfd7db">esc</text>
+    <rect x="130" y="134" width="576" height="39" rx="8" fill="#162420" stroke="#8ca36f" stroke-width="3"/>
+    <g font-size="14" fill="#e6f1e4" text-anchor="middle">
+      <rect x="140" y="142" width="119" height="23" rx="4" fill="#344b3d"/><text x="199" y="158">Claude · Codex</text>
+      <rect x="268" y="142" width="119" height="23" rx="4" fill="#344b3d"/><text x="327" y="158">AI 会话状态</text>
+      <rect x="396" y="142" width="169" height="23" rx="4" fill="#344b3d"/><text x="480" y="158">阅读 → 修改 → 测试</text>
+      <text x="624" y="158">小猫 / 工具</text>
+    </g>
+    <rect x="721" y="139" width="35" height="29" rx="6" fill="#24282d"/>
+    <g fill="#333940" stroke="#1f252b" stroke-width="1">
+      <path d="M72 188h684v34H72z M72 232h684v34H72z M72 276h684v34H72z"/>
+      <path d="M72 320h91v34H72z M173 320h55v34h-55z M238 320h55v34h-55z M303 320h292v34H303z M605 320h55v34h-55z M670 320h86v34h-86z"/>
+    </g>
+    <g stroke="#d7dde3" stroke-width="7">
+      <path d="M119 187v37m48-37v37m48-37v37m48-37v37m48-37v37m48-37v37m48-37v37m48-37v37m48-37v37m48-37v37m48-37v37m48-37v37m48-37v37"/>
+      <path d="M140 232v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35"/>
+      <path d="M157 276v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35m49-35v35"/>
+    </g>
+    <g fill="#d5dce2" font-size="14" text-anchor="middle">
+      <text x="96" y="210">~</text><text x="143" y="210">1</text><text x="191" y="210">2</text><text x="239" y="210">3</text><text x="287" y="210">4</text><text x="335" y="210">5</text><text x="383" y="210">6</text><text x="431" y="210">7</text><text x="479" y="210">8</text><text x="527" y="210">9</text><text x="575" y="210">0</text>
+      <text x="165" y="255">Q</text><text x="214" y="255">W</text><text x="263" y="255">E</text><text x="312" y="255">R</text><text x="361" y="255">T</text><text x="410" y="255">Y</text><text x="459" y="255">U</text><text x="508" y="255">I</text><text x="557" y="255">O</text><text x="606" y="255">P</text>
+      <text x="181" y="299">A</text><text x="230" y="299">S</text><text x="279" y="299">D</text><text x="328" y="299">F</text><text x="377" y="299">G</text><text x="426" y="299">H</text><text x="475" y="299">J</text><text x="524" y="299">K</text><text x="573" y="299">L</text>
+    </g>
+    <text x="819" y="149" font-size="21" font-weight="700" fill="#20362c">就在这里</text>
+    <text x="819" y="180" font-size="16" fill="#68796c">AIQuota 显示的位置</text>
+    <path d="M808 151H687" stroke="#52734f" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="820" y="242" font-size="14" fill="#68796c">右端按键：Touch ID</text>
+    <text x="820" y="271" font-size="14" fill="#68796c">长条屏幕：Touch Bar</text>
+  </g>
+</svg>
