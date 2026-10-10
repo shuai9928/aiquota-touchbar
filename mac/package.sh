@@ -58,7 +58,7 @@ AIQuota $DATE（$COMMIT）
 · 已经开着的 AI 会话要新开一个才会亮灯。
 · ZCode：接上时会打开它的 hooks 总开关（不开不跑）；你自己别的 ZCode hook 也会一起开始运行。卸载时还原。
 · tb 命令装在 ~/.local/bin。终端里提示找不到 tb 的话，把它加进 PATH：
-    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc   然后开一个新的终端窗口。
+    echo 'export PATH="\$HOME/.local/bin:\$PATH"' >> ~/.zshrc   然后开一个新的终端窗口。
 · Chrome 歌词（B 站 / YouTube）：勾了之后会打开 Chrome 的扩展页面和一个选中了 ChromeExtension 文件夹的 Finder 窗口——
   在扩展页面右上角打开「开发者模式」，把那个文件夹拖到扩展页面上。
 
