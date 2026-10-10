@@ -1,0 +1,2 @@
+/* 只在扩展临时打开 YouTube 字幕、让播放器下载一次的那几秒里，把画面上的字幕藏起来；用户自己开的字幕不受影响 */
+html.aiquota-hide-cc .ytp-caption-window-container { opacity: 0 !important; pointer-events: none !important; }

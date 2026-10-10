@@ -1,0 +1,8 @@
+.DS_Store
+mac/build/
+dist/
+*.dmg
+*.zip
+.env
+.env.*
+*.log

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "AIQuota 触控栏歌词",
+  "description": "把 B 站 / YouTube 正在播放的歌词或字幕送到 Mac 触控栏（AIQuota）。只在这两个网站上运行。",
+  "version": "1.0.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1c/aw8FnBne10K/BMeXe8Mf2tIzHCGyeOKdVV3PI2yEmSiXbAkVqhrhJukaIUM1kPJk7/8XVFv/Hy0Vh5llbSnB3EUWT/JBg3i6PIcoqxJVge8gV8ysz1rtX9qgEKybFt16GJjgLp0wg8DNz/xTzgvLQaTHa050HNttAM2GNU53K87xrdGYf/HIgQpgbTRGl0eqppOPxDgMmdHsmgkJaMdblsi4/hep00sxnpVwpxQ3v+ge22ZJl/jnJylz5/jlW6i86ihmjMjw2lGY9o2cawOR0L2PNpbDAjwzZaipfWKYHL+g+ZqqwLI3SmMLgYKhl7kythx1SQts+Kk4lIhiYLQIDAQAB",
+  "minimum_chrome_version": "111",
+  "permissions": ["nativeMessaging", "storage"],
+  "host_permissions": ["https://lrclib.net/*", "https://music.163.com/*", "https://lyrics.kugou.com/*"],
+  "background": { "service_worker": "sw.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.bilibili.com/video/*", "https://www.bilibili.com/list/*", "https://www.bilibili.com/festival/*",
+                  "https://www.youtube.com/*"],
+      "js": ["main.js"], "world": "MAIN", "run_at": "document_start"
+    },
+    {
+      "matches": ["https://www.bilibili.com/video/*", "https://www.bilibili.com/list/*", "https://www.bilibili.com/festival/*",
+                  "https://www.youtube.com/*"],
+      "js": ["lib/lrc.js", "lib/json3.js", "content.js"], "css": ["hide-cc.css"], "run_at": "document_start"
+    }
+  ]
+}
