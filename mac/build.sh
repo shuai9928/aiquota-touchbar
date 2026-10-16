@@ -20,6 +20,7 @@ cp Info.plist "$APP/Contents/Info.plist"
 mkdir -p "$APP/Contents/Resources"
 if [ -d ../chrome ]; then rsync -a --delete ../chrome/ "$APP/Contents/Resources/ChromeExtension/"; fi
 cp LICENSE.piano-upstream "$APP/Contents/Resources/"
+cp ../LICENSE "$APP/Contents/Resources/LICENSE"
 codesign --force --sign - "$APP" >/dev/null
 
 if [ "${1:-}" = "--build-only" ]; then

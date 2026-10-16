@@ -28,6 +28,7 @@ codesign --verify --strict "$STAGE/AIQuota.app"
 ln -s /Applications "$STAGE/应用程序"
 
 mkdir -p "$STAGE/第三方授权"
+cp ../LICENSE "$STAGE/LICENSE"
 cp LICENSE.piano-upstream "$STAGE/第三方授权/钢琴 pock-piano-widget（MIT）.txt"
 
 cat > "$STAGE/使用说明.txt" <<EOF
@@ -63,14 +64,15 @@ AIQuota ${DATE}（${COMMIT}）
   在扩展页面右上角打开「开发者模式」，把那个文件夹拖到扩展页面上。
 
 ━━ 隐私 ━━
-· 全在本机：只读 Claude 桌面 app 的用量文件、Codex 的登录、AI 会话的状态；不读对话内容，不上传任何东西。
-· 联网只有两处：查 Codex 额度（chatgpt.com 的用量接口，用你本机 Codex 的登录）；歌词扩展查歌词（lrclib / 网易云 / 酷狗）。
+· 会话状态来自本机 hooks；路线图读取本轮本地会话记录，提取工具名、文件名、命令摘要和计划。不调用模型分析会话，也不上传聊天全文。
+· 联网功能：查 Codex 额度（chatgpt.com 的用量接口，用你本机 Codex 的登录）；歌词扩展查歌词（lrclib / 网易云 / 酷狗）；可选双机集成使用你配置的 Tailscale / two-machine。
 
 ━━ 卸载 ━━
 点菜单栏上的 AIQuota →「接入…」→「卸载 AIQuota…」：去掉 Claude Code / Codex / ZCode 配置里 AIQuota 的条目（先备份）、
 AIQuota 装的 tb 命令、开机启动，把 AIQuota 移到废纸篓；可以选连数据一起删。（直接把 app 拖进废纸篓会把这些配置留下。）
 也可以双击这个安装盘里的「卸载 AIQuota.command」（第一次同样要到「隐私与安全性」里放行）。
 
+本项目采用 MIT 许可证，全文在安装盘的 LICENSE 文件和应用的资源目录中。
 第三方：触控栏钢琴改编自 p-x9/pock-piano-widget（MIT），授权全文在「第三方授权」文件夹里。
 EOF
 

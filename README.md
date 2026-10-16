@@ -6,7 +6,17 @@ Claude 和 Codex 同时干活时，低头就能看见谁在跑、谁在等你、
 
 本仓库包含 AIQuota 的 **Mac 菜单栏、Touch Bar 应用和 Chrome 歌词扩展**。没有 Touch Bar 的 Apple 芯片 Mac，也可以使用菜单栏中的额度和会话功能。
 
-[公开介绍与密码下载](https://aiquota-touchbar-download.alightcloud6.chatgpt.site) · [功能图解](#功能图解) · [安装与接入](#安装与接入) · [从源码构建](#从源码构建) · [常见问题](#常见问题)
+[演示视频](#演示视频) · [下载源码 ZIP](https://github.com/shuai9928/aiquota-touchbar/archive/refs/heads/main.zip) · [功能图解](#功能图解) · [安装与接入](#安装与接入) · [从源码构建](#从源码构建)
+
+源码采用 [MIT 许可](LICENSE)，可以直接下载、学习、修改和再分发；无需下载密码。第三方钢琴授权与演示配音的范围见文末和 [媒体说明](docs/media/README.md)。
+
+## 演示视频
+
+[![AIQuota：触控栏上的 AI 工作路线与状态灯](docs/media/cover.png)](docs/media/demo.mp4)
+
+**[观看完整视频（1 分 40 秒，1080p）](docs/media/demo.mp4)** · [下载 MP4](https://raw.githubusercontent.com/shuai9928/aiquota-touchbar/main/docs/media/demo.mp4) · [字幕](docs/media/demo.srt) · [更多视频截图与署名](docs/media/README.md)
+
+视频由演示界面和模拟数据制作，包含工作路线、会话提醒、歌词和钢琴。不是私人聊天录屏；具体功能和使用条件以下文及源码为准。
 
 ## Touch Bar 在哪里？
 
@@ -164,9 +174,11 @@ tb clear
 | 歌词 | Chrome + 配套扩展，支持 Bilibili / YouTube |
 | 双机 | 可选的 Tailscale 和 `two-machine`；不需要它们也能使用其他功能 |
 
-### 使用安装包
+### 使用历史安装包
 
-1. 打开[下载页](https://aiquota-touchbar-download.alightcloud6.chatgpt.site)，输入由仓库所有者提供的下载密码，选择 **Mac 安装包**。
+源码现已公开，可直接按[从源码构建](#从源码构建)运行。原介绍页的安装包下载仍可能要求密码，与公开 GitHub 源码的访问无关。
+
+1. 如已有历史安装包，或已获[原下载页](https://aiquota-touchbar-download.alightcloud6.chatgpt.site)的安装包下载密码，选择 **Mac 安装包**。
 2. 打开 DMG，把 `AIQuota.app` 拖入「应用程序」。**从应用程序目录启动，不要直接从安装盘启动并接入 hooks。**
 3. 首次打开如被系统阻止，到「系统设置 → 隐私与安全性」中允许打开。当前应用使用临时签名，尚未使用 Apple 开发者签名或公证。
 4. 在欢迎窗口勾选需要的会话灯、`tb` 命令、开机启动和歌词扩展，点「设置」。以后可从菜单栏 **AIQuota → 接入…** 修改。
@@ -196,10 +208,10 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 
 编译需要带 **macOS 26 SDK** 的 Xcode 或 Command Line Tools。运行目标仍是 macOS 13 起，翻译功能单独检查系统版本。
 
-仓库保持私有，以下克隆命令需要获得仓库权限并配置 GitHub SSH；也可以在下载页用密码获取源码 ZIP。
+仓库公开，无需 GitHub 登录或 SSH 配置；也可以直接[下载源码 ZIP](https://github.com/shuai9928/aiquota-touchbar/archive/refs/heads/main.zip)。
 
 ```bash
-git clone git@github.com:shuai9928/aiquota-touchbar.git
+git clone https://github.com/shuai9928/aiquota-touchbar.git
 cd aiquota-touchbar
 
 # 仅编译，不覆盖已安装的应用，也不安装 hooks
@@ -224,14 +236,13 @@ open mac/build/AIQuota.app
 
 测试使用临时配置目录。打包脚本默认先测试、再构建，输出到 `dist/AIQuota-<日期>-<提交>.dmg`，包含应用、应用程序快捷方式、使用说明、卸载脚本和第三方授权；不带本机登录、会话、常用指令或材料。刚完成测试且代码未变化时，可使用 `./mac/package.sh --skip-tests`。
 
-## 数据、权限与下载保护
+## 数据与权限
 
 - **会话状态来自本机。** hooks 提供运行、等待、完成等状态；路线图读取本轮本地会话记录，提取工具名、文件名、命令摘要和计划。应用不调用模型分析会话，也不把聊天全文上传到本站或 GitHub。
 - **有明确的联网功能。** Codex 用量查询会访问用量接口；歌词扩展会查询歌词或字幕来源。可选双机集成使用用户配置的 Tailscale / `two-machine`。
 - **剪贴板由你主动使用。** 常用指令点按复制，材料架主动添加时读取一次，翻译剪贴板也需要点按；不会持续读取剪贴板。复制交接摘要可能包含本机项目路径，由你决定粘贴给谁。
 - **没有录屏要求。** 基本功能不需要辅助功能或屏幕录制授权；系统通知由用户授权。
-- **下载保护在服务器验证。** 公开介绍页无需密码；安装包和源码 ZIP 要校验密码后才返回，密码不写进 README。私有 GitHub 仓库仍按 GitHub 仓库权限控制访问。
-- **收到文件后可以复制。** 下载密码控制取文件的权限；已获密码或仓库授权的人仍能复制文件、转交或用自己的 AI 阅读。公开介绍页本身也可以被浏览器和 AI 浏览。
+- **公开源码不含本机配置。** 个人登录、真实会话、hooks 运行状态、常用指令和材料不随本仓库分发。请勿将运行后的个人数据、凭据或完整聊天上传到 Issue。
 
 Touch Bar Control Strip 使用 macOS 私有接口，系统更新可能影响兼容性；AI 应用的 hooks、用量接口和本地记录格式也可能随版本变化。
 
@@ -260,5 +271,10 @@ Touch Bar Control Strip 使用 macOS 私有接口，系统更新可能影响兼�
 | `mac/tests/` | Swift 与 Chrome 扩展测试 |
 | `chrome/` | 歌词扩展、原生消息桥与配套脚本 |
 | `docs/images/` | README 的示例界面与位置示意图 |
+| `docs/media/` | 完整演示视频、字幕、封面和截图 |
+
+## 许可与署名
+
+项目原创源码采用 [MIT 许可](LICENSE)。视频、配音及第三方内容不因源码许可而自动获得 MIT 授权，范围与来源见 [媒体说明](docs/media/README.md)。
 
 触控栏钢琴改编自 [p-x9/pock-piano-widget](https://github.com/p-x9/pock-piano-widget)，其 MIT 授权全文保留在 [mac/LICENSE.piano-upstream](mac/LICENSE.piano-upstream)。
