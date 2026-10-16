@@ -12,11 +12,11 @@ Claude 和 Codex 同时干活时，低头就能看见谁在跑、谁在等你、
 
 ## 演示视频
 
-https://github.com/user-attachments/assets/f7df5cbb-e2f8-4afe-97ed-da82346b947c
+[![AIQuota：触控栏上的 AI 工作路线与状态灯](docs/media/cover.png)](https://shuai9928.github.io/aiquota-touchbar/watch.html)
 
-**[观看完整视频（1 分 40 秒）](https://github.com/user-attachments/assets/f7df5cbb-e2f8-4afe-97ed-da82346b947c)** · [下载 1080p MP4](https://raw.githubusercontent.com/shuai9928/aiquota-touchbar/main/docs/media/demo.mp4) · [字幕](docs/media/demo.srt) · [封面、截图与署名](docs/media/README.md)
+**[观看完整视频（1 分 40 秒）](https://shuai9928.github.io/aiquota-touchbar/watch.html)** · [下载 1080p MP4](https://raw.githubusercontent.com/shuai9928/aiquota-touchbar/main/docs/media/demo.mp4) · [字幕](docs/media/demo.srt) · [封面、截图与署名](docs/media/README.md)
 
-页面内可播放完整 720p 版本，1080p 原片可单独下载。
+打开播放页可观看完整 1080p 视频，也可单独下载原片。
 
 视频由演示界面和模拟数据制作，包含工作路线、会话提醒、歌词和钢琴。不是私人聊天录屏；具体功能和使用条件以下文及源码为准。
 

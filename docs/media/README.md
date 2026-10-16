@@ -1,10 +1,10 @@
 # AIQuota 演示视频与图片
 
-[返回项目说明](../../README.md) · **[观看完整视频](https://github.com/user-attachments/assets/f7df5cbb-e2f8-4afe-97ed-da82346b947c)** · [下载 1080p MP4](https://raw.githubusercontent.com/shuai9928/aiquota-touchbar/main/docs/media/demo.mp4) · [SRT 字幕](demo.srt)
+[返回项目说明](../../README.md) · **[观看完整视频](https://shuai9928.github.io/aiquota-touchbar/watch.html)** · [下载 1080p MP4](https://raw.githubusercontent.com/shuai9928/aiquota-touchbar/main/docs/media/demo.mp4) · [SRT 字幕](demo.srt)
 
-https://github.com/user-attachments/assets/f7df5cbb-e2f8-4afe-97ed-da82346b947c
+[▶ 打开完整视频播放页](https://shuai9928.github.io/aiquota-touchbar/watch.html)
 
-页面内为完整 720p 播放版；仓库中的 `demo.mp4` 保留 1080p 原片。
+播放页直接展示完整 1080p 视频；仓库中的 `demo.mp4` 保留同一原片。
 
 成片为 AIQuota 介绍视频第六版：100.17 秒，1920×1080，30 fps，含旁白与画面字幕。视频、封面和截图随源码一起公开，获取文件无需下载密码。
 
@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/f7df5cbb-e2f8-4afe-97ed-da82346b947c
 
 ### Touch Bar 在哪里
 
-[![键盘上方的 Touch Bar 与 AIQuota 入口](cover.png)](https://github.com/user-attachments/assets/f7df5cbb-e2f8-4afe-97ed-da82346b947c)
+[![键盘上方的 Touch Bar 与 AIQuota 入口](cover.png)](https://shuai9928.github.io/aiquota-touchbar/watch.html)
 
 ### 本轮工作路线
 
